@@ -66,7 +66,7 @@ let SEM_2020 = {
 
 //Je définis que type peut prendre une valeur par défaut
 
-function addPerturbation(perturbationName, {type:type="typeDefaut", ...rest } ) {
+function addPerturbation(perturbationName, {type="typeDefaut", ...rest } ) {
     dataBis[perturbationName] = {
         type:type,
         ...rest
@@ -78,8 +78,10 @@ console.log(dataBis);
 
 
 //Section 4
-function restTest(...rest) {
-    console.log('rest', rest);
+function restTest(a,b,...rest) {
+    console.log(a);
+    console.log(b);
+    console.log("rest=",rest);
 }
 
-restTest()
+restTest(1,4,3,6,8);
