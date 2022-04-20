@@ -74,6 +74,8 @@ function surveillerClickBouton(element) {
     })
 }
 
+
+// Autre alternative bonne methode 
 /*
 document.addEventListener("click", function (event) {
     button = event.target.id;
